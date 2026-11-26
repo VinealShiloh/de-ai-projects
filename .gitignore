@@ -1,10 +1,31 @@
+# data — never committed; fixtures live in tests/fixtures/ and are committed
 data/
-!tests/fixtures/
+*.parquet
+*.csv.gz
+*.json.gz
+!tests/fixtures/**
+
+# secrets
+.env
+*.pem
+
+# python
 .venv/
 __pycache__/
 *.pyc
-.env
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# spark / delta / duckdb
+spark-warehouse/
+metastore_db/
+derby.log
 warehouse.duckdb
 ckpt/
-spark-warehouse/
+checkpoint/
+
+# os / editor
 .DS_Store
+.idea/
+.vscode/
