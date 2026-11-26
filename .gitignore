@@ -1,0 +1,10 @@
+data/
+!tests/fixtures/
+.venv/
+__pycache__/
+*.pyc
+.env
+warehouse.duckdb
+ckpt/
+spark-warehouse/
+.DS_Store
